@@ -10,7 +10,7 @@ export default function Hero() {
 		<div className="hero">
 			<div class="container">
 				<div className="row logo-container justify-content-center">
-					<img src={logo} alt="" height="400" width="400" />
+					<img className="logo-img" src={logo} />
 				</div>
 				<div className="row character-container justify-content-center">
 					<img className="character-img" src={personajes} />

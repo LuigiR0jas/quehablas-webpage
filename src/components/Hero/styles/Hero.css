@@ -1,10 +1,10 @@
-/* .hero {
-	background-image: url("../../../assets/plantilla\ historia\ 1.jpg");
-	background-size: contain;
-	background-repeat: contain;
-} */
 .logo-container {
 	margin-top: -50px;
+}
+
+.logo-img {
+	max-width: 400px;
+	max-height: 400px;
 }
 
 .character-container {

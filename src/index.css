@@ -7,5 +7,12 @@ body {
 
 .title {
 	font-family: "Permanent Marker";
+	font-size: 25px;
 	margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+	.title {
+		font-size: 35px;
+	}
 }
