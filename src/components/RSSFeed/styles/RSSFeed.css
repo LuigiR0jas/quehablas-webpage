@@ -1,0 +1,13 @@
+.rss-feed {
+	border-radius: 15px 15px 0px 0px;
+	background-color: white;
+	padding: 25px;
+}
+
+.dock {
+	height: 5px;
+	width: 100px;
+	background-color: rgba(143, 143, 143, 0.671);
+	border-radius: 50px;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,10 @@
+body {
+	background-image: url("./assets/plantilla\ historia\ 1.jpg");
+	background-size: contain;
+	background-repeat: contain;
+}
+
+.title {
+	font-family: "Permanent Marker";
+	margin-bottom: 45px;
+}
