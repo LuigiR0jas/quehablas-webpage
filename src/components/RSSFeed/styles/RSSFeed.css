@@ -11,3 +11,13 @@
 	border-radius: 50px;
 	margin-bottom: 20px;
 }
+
+.rss-btn {
+	color: white;
+	background-color: #0f0f0f;
+}
+
+.rss-btn:hover {
+	color: white;
+	background-color: #ea5e61;
+}

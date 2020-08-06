@@ -30,10 +30,33 @@ export default class RSSFeed extends Component {
 					return <EpisodeCard src={url.origin + pathname.join("/")}></EpisodeCard>;
 				});
 				this.setState({
-					episodesCards: episodes,
+					episodesCards: this.sliceArrayInChunks(episodes, 3),
 					loading: false,
 				});
 			});
+	};
+
+	sliceArrayInChunks = (array, subArraySize) => {
+		// array is the array we will slice in chunks
+		// subArraySize is the length each subarray will have
+		console.log("yes");
+
+		let slicedArray = [],
+			auxiliaryArray = [];
+
+		array.forEach((item, index, array) => {
+			let realIndex = index + 1;
+
+			if (Number.isInteger(realIndex / subArraySize) || realIndex == array.length) {
+				auxiliaryArray.push(item);
+				slicedArray.push(auxiliaryArray);
+				auxiliaryArray = [];
+			} else {
+				auxiliaryArray.push(item);
+			}
+		});
+
+		return slicedArray;
 	};
 
 	componentDidMount() {
@@ -44,13 +67,20 @@ export default class RSSFeed extends Component {
 		return (
 			<div className="container rss-feed">
 				<div className="row justify-content-center">
-					<div className="row justify-content-center">
-						<div className="dock"></div>
+					<div className="container">
+						<div className="row justify-content-center">
+							<div className="dock"></div>
+						</div>
+						<div className="row justify-content-center">
+							<h1 className="title">Últimos Episodios</h1>
+						</div>
+						<div className="row justify-content-center">
+							{this.state.loading ? "Loading" : this.state.episodesCards[0]}
+						</div>
+						<div className="row justify-content-center">
+							<div className="btn rss-btn btn-lg">Ver más</div>
+						</div>
 					</div>
-					<div className="row justify-content-center">
-						<h1 className="title">Últimos Episodios</h1>
-					</div>
-					<div className="row justify-content-center">{this.state.loading ? "Loading" : this.state.episodesCards}</div>
 				</div>
 			</div>
 		);

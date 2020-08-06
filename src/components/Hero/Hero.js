@@ -9,11 +9,11 @@ export default function Hero() {
 	return (
 		<div className="hero">
 			<div class="container">
-				<div className="row justify-content-center">
+				<div className="row logo-container justify-content-center">
 					<img src={logo} alt="" height="400" width="400" />
 				</div>
 				<div className="row character-container justify-content-center">
-					<img src={personajes} alt="" height="400" />
+					<img className="character-img" src={personajes} />
 				</div>
 			</div>
 		</div>

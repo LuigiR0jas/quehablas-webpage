@@ -1,3 +1,8 @@
-.episode-card {
+.embed-responsive-5by1 {
+	padding-top: 15%;
+}
+
+.embed-responsive {
+	width: 80%;
 	margin-bottom: 25px;
 }
