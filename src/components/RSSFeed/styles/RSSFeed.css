@@ -23,6 +23,10 @@
 	background-color: #ea5e61;
 }
 
+.spinner-border {
+	margin-bottom: 45px;
+}
+
 @media (min-width: 769px) {
 	.rss-btn {
 		font-size: 1.25rem;

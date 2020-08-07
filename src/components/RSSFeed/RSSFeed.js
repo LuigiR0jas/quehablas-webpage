@@ -75,10 +75,18 @@ export default class RSSFeed extends Component {
 							<h1 className="title">Últimos Episodios</h1>
 						</div>
 						<div className="row justify-content-center">
-							{this.state.loading ? "Loading" : this.state.episodesCards[0]}
+							{this.state.loading ? (
+								<div className="spinner-border text-danger"></div>
+							) : (
+								this.state.episodesCards[0]
+							)}
 						</div>
 						<div className="row justify-content-center">
-							<div className="btn rss-btn btn-lg">Ver más</div>
+							<a
+								href="https://www.youtube.com/channel/UCFMgYShpH1ldxj7_4Wl-OkQ/about?view_as=subscriber"
+								className="btn rss-btn btn-lg">
+								Más episodios
+							</a>
 						</div>
 					</div>
 				</div>
