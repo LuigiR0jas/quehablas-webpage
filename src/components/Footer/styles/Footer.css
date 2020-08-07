@@ -5,8 +5,15 @@ footer {
 }
 
 .footer-text {
+	font-size: 15px;
 	color: white;
 	text-align: center;
 	margin-top: 0.5em;
 	margin-bottom: 0em;
+}
+
+@media (min-width: 768px) {
+	.footer-text {
+		font-size: 1rem;
+	}
 }

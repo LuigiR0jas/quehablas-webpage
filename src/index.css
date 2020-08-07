@@ -1,6 +1,7 @@
 body {
 	height: 100vh;
 	background-image: url("./assets/plantilla\ historia\ 1.jpg");
+	background-attachment: fixed;
 	background-size: contain;
 	background-repeat: contain;
 }

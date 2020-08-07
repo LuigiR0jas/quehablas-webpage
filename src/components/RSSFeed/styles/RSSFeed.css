@@ -13,6 +13,7 @@
 }
 
 .rss-btn {
+	font-size: 15px;
 	color: white;
 	background-color: #0f0f0f;
 }
@@ -20,4 +21,10 @@
 .rss-btn:hover {
 	color: white;
 	background-color: #ea5e61;
+}
+
+@media (min-width: 769px) {
+	.rss-btn {
+		font-size: 1.25rem;
+	}
 }
