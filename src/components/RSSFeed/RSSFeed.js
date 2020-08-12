@@ -15,7 +15,7 @@ export default class RSSFeed extends Component {
 	}
 
 	fetchRSS = () => {
-		const RSS_URL = "https://anchor.fm/s/261b0dc0/podcast/rss";
+		const RSS_URL = "https://anchor.fm/s/286b4c98/podcast/rss";
 
 		fetch(RSS_URL)
 			.then((response) => response.text())
